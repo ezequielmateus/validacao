@@ -1,0 +1,45 @@
+<html>
+
+
+<body>
+<input type="text" id="campo">
+
+
+
+<input type="button" id="btnVerificar" value="Analisa">
+
+</body>
+
+<script>
+var elementoCampo = document.getElementById("campo");
+var btnVerificar = document.getElementById("btnVerificar");
+
+
+btnVerificar.onclick = function(){
+
+
+//bom, se tentarmos utilizar o length por exemplo, valueCampo.length, ele conta a quantidade de caracteres que o campo possui
+//Então o certo é colocar o value, porém o value irá retornar uma string mesmo você colocando um número, exemplo se você colocar 2
+//ele irá retornar o dois com aspas "2", mas internamente o javascript tenta verificar o que você está tentando conversar e retira
+//internamente o 2 e acaba ficando a condição neste formado if(2 > 4){instruções...}
+
+
+if(valueCampo.value > 4){
+alert("este número é maior que 4")
+}
+
+
+
+}
+
+
+
+
+
+
+
+</script>
+
+
+
+</html>
